@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="main-nav container flex">
+        <a href="#" onclick="reload()" class="company-logo">
+        <img src="1704799653373.png" alt="company logo">
+    </a>
+        <ul class="nav-links">
+            <div class="nav-links">
+            <ul class="flex">
+                <li class="hover-link nav-item" id="India" onclick="onNavItemClick('India')"> <a href="#">India</a></li>
+                <li class="hover-link nav-item" id="World" onclick="onNavItemClick('World')"><a href="#">World</a></li>
+                <li class="hover-link nav-item" id="Business" onclick="onNavItemClick('Business')"><a href="#">Business</a></li>
+                <li class="hover-link nav-item" id="Technology" onclick="onNavItemClick('Technology')"><a href="#">Technology</a></li>
+                <li class="hover-link nav-item" id="Sports" onclick="onNavItemClick('Sports')"><a href="#">Sports</a></li>
+        </ul>
+    </div>
+    <div class="search-bar flex">
+        <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+        <button id="search-button" class="search-button">Search</button>
+    </div>
+</div>
+      </nav>
+
+    
+    
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div>
+    </template>
+
+
+    <!-- Main Footer Content -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Hi I'm AVY. </p>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li>Email: avy@gmail.com</li>
+                    <li>Phone: +91 9300000000</li>
+                    <li>Address:New Delhi, INDIA</li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/kavy-j-a35367236/" class="social-link">linkedin</a>
+                    <a href="https://github.com/kavyjha1" class="social-link">github</a>
+                    <a href="https://www.instagram.com/iam_avy.6/" class="social-link">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 AVY . All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
